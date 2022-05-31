@@ -17,3 +17,26 @@ jobs:
           node-version: ${{ matrix.version }}
       - run: npm install
       - run: npm test
+  deploy-staging:
+    needs:
+      - test
+    environment: staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: staging deploy
+        run: |
+          echo "deployment steps will run here"
+          exit 0
+  deploy-prod:
+    needs:
+      - test
+      - staging
+    environment: prod
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: staging deploy
+        run: |
+          echo "deployment steps will run here"
+          exit 0

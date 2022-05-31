@@ -1,0 +1,33 @@
+name: deployment
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  staging:
+    needs:
+      - test
+      - analyze
+    environment: staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: staging deploy
+        run: |
+          echo "deployment steps will run here"
+          exit 0
+  prod:
+    needs:
+      - test
+      - analyze
+      - staging
+    environment: prod
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: staging deploy
+        run: |
+          echo "deployment steps will run here"
+          exit 0

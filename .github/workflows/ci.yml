@@ -18,6 +18,7 @@ jobs:
       - run: npm install
       - run: npm test
   deploy-staging:
+    if: github.ref_name == 'main'
     needs:
       - test
     environment: staging
@@ -29,6 +30,7 @@ jobs:
           echo "deployment steps will run here"
           exit 0
   deploy-prod:
+    if: github.ref_name == 'main'
     needs:
       - test
       - staging

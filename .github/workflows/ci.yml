@@ -33,7 +33,7 @@ jobs:
     if: github.ref_name == 'main'
     needs:
       - test
-      - staging
+      - deploy-staging
     environment: prod
     runs-on: ubuntu-latest
     steps:

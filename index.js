@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
+  res.cookie('userAccountID', 'abcd1234');
   res.send(logHello());
 });
 

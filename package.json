@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/collinmcneese-test/nodejs_app#readme",
   "dependencies": {
-    "@mydevsandbox-com/log-hello": "^0.4.0",
+    "@mydevsandbox-com/log-hello": "^0.4.1",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "cspell": "^9.1.2",
-    "eslint": "^9.30.0",
+    "cspell": "^9.1.3",
+    "eslint": "^9.30.1",
     "eslint-config-strongloop": "^2.1.0"
   }
 }

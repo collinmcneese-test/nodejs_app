@@ -19,7 +19,7 @@
   "homepage": "https://github.com/collinmcneese-test/nodejs_app#readme",
   "dependencies": {
     "@mydevsandbox-com/log-hello": "^0.4.1",
-    "express": "^5.1.0"
+    "express": "^5.2.0"
   },
   "devDependencies": {
     "cspell": "^9.3.2",

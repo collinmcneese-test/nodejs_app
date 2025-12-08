@@ -19,10 +19,10 @@
   "homepage": "https://github.com/collinmcneese-test/nodejs_app#readme",
   "dependencies": {
     "@mydevsandbox-com/log-hello": "^0.4.1",
-    "express": "^5.1.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
-    "cspell": "^9.3.2",
+    "cspell": "^9.4.0",
     "eslint": "^9.39.1",
     "eslint-config-strongloop": "^2.1.0"
   }

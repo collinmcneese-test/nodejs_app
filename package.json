@@ -22,7 +22,7 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "cspell": "^10.3.0",
+    "cspell": "^10.3.2",
     "eslint": "^10.10.0",
     "eslint-config-strongloop": "^2.1.0"
   }
